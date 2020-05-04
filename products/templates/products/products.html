@@ -46,7 +46,7 @@
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'products' %}">Baile na dTáirgí</a> | </span>
                             {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                            Líon na dtáirge a aimsíodh: {{ products|length }} {% if search_term %} <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                                             {% if product.rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% else %}
-                                                <small class="text-muted">No Rating</small>
+                                                <small class="text-muted">Gan Mheasúnú</small>
                                             {% endif %}
                                         </div>
                                     </div>

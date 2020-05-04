@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">Shopping Bag</h2>
+                <h2 class="logo-font mb-4">Mála Ceannaigh</h2>
                 <hr>
             </div>
         </div>
@@ -28,11 +28,11 @@
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
-                                    <th scope="col">Product Info</th>
+                                    <th scope="col">Faisnéis an Táirge</th>
                                     <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th scope="col">Luach</th>
+                                    <th scope="col">Líon</th>
+                                    <th scope="col">Foiomlán</th>
                                 </tr>
                             </thead>
 
@@ -80,8 +80,8 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
+                                        <a class="update-link text-info"><small>Nuashonraigh é</small></a>
+                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Bain</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -90,12 +90,12 @@
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
-                                    <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                    <h6><strong>Iomlán an Mhála: ${{ total|floatformat:2 }}</strong></h6>
+                                    <h6>Seachadadh: ${{ delivery|floatformat:2 }}</h6>
+                                    <h4 class="mt-4"><strong>An tIomlán: ${{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
                                         <p class="mb-1 text-danger">
-                                            You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                            D'fhéadfá seachadadh saor in aisce a fháil trí díreach <strong>${{ free_delivery_delta }}</strong> breise a chaitheamh!
                                         </p>
                                     {% endif %}
                                 </td>
@@ -106,10 +106,10 @@
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
+                                        <span class="text-uppercase">Lean ort ag ceannach</span>
                                     </a>
                                     <a href="" class="btn btn-black rounded-0 btn-lg">
-                                        <span class="text-uppercase">Secure Checkout</span>
+                                        <span class="text-uppercase">Íoc anois</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
                                         </span>

@@ -5,9 +5,9 @@
                 Na Táirgí Uile
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">De réir phraghais</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">De réir mheasúnaithe</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">De réir aicme</a>
                 <a href="{% url 'products' %}" class="dropdown-item">Gach Táirge</a>
             </div>
         </li>
@@ -17,8 +17,8 @@
                 Éadaí
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Activewear &amp; Essentials</a>
-                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Jeans</a>
+                <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Éadaí Gníomhach</a>
+                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Brístí</a>
                 <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Léinte</a>
                 <a href="{% url 'products' %}?category=activewear,essentials,jeans,shirts" class="dropdown-item">Na hÉadaí Uile</a>
             </div>
@@ -43,7 +43,7 @@
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">Táirgí Nua</a>
                 <a href="{% url 'products' %}?category=deals" class="dropdown-item">Margaí Maithe</a>
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Fuíoll Ar Díol</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">Na Tairiscintí Uile</a>
             </div>
         </li>
     </ul>
