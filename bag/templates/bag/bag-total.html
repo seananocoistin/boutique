@@ -1,0 +1,8 @@
+<h6><strong>Luach iomlán na nithe sa mhála: €{{ total|floatformat:2 }}</strong></h6>
+<h6>Seachadadh: €{{ delivery|floatformat:2 }}</h6>
+<h4 class="mt-4"><strong>An tIomlán: €{{ grand_total|floatformat:2 }}</strong></h4>
+{% if free_delivery_delta > 0 %}
+    <p class="mb-1 text-danger">
+        Má chaitheann tú díreach <strong>${{ free_delivery_delta }}</strong> breise, d'fhéadfá seachadadh saor in aisce a fháil!
+    </p>
+{% endif %}
